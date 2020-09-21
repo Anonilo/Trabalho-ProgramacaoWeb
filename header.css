@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.page1-header {
+    display: flex;
+    flex-direction: column;
+    background-color: #d6b149;
+} 
+
+.page1-header .top-bar-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+} 
+
+.page1-header .top-bar-container h1 {
+    color: black;
+    font: 700 1.8rem Archivo;
+    text-shadow: 0.1em 0.1em 0.2em black;
+} 
+
+.page1-header .top-bar-container p {
+    color: #1c5ba3;
+    font: 700 1.2rem Archivo;
+    display: flex;
+    align-items: center;
+} 
+
+.top-bar-container p img {
+    height: 5rem;
+    width : 5rem;
+    border-radius: 50%;
+    margin-right: 1.0rem;
+    margin-left: 0.6rem;
+}
+
+.product-container #top-image,
+.product-container #above-image{
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product-container #top-describe,
+.product-container #above-describe {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3.0rem;
+}
+
+.product-container #top-describe h2,
+.product-container #above-describe h2 {
+    font: 700 1.3rem Archivo;
+    color: rgb(52, 172, 52);
+}
+
+/*---link--*/
+
+#go-page2 {
+    color: #1c5ba3;
+    text-decoration: none;
+    width: 3.6%;
+    font: 600 1.2rem Archivo;
+    border-radius: 0.5rem;
+    transform: translateX(2500%);
+}
+
+#go-page2:hover {
+    color: #5e94d1;
+}
+
+/*---menu---*/ 
+
+.main-menu {
+    display: flex;
+    align-items: center;
+}
+
+.main-menu ul li {
+    color: black;
+    float: left;
+    width: 200px;
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.main-menu ul li:hover {
+    background-color: gray;
+}
+
+.main-menu ul {
+    padding: 0;
+}
+
+.main-menu ul ul {
+    display: none;
+}
+
+.main-menu ul li:hover ul {
+    display: block;
+}
+
+.main-menu ul ul li:hover {
+    background-color: rgb(131, 109, 109);
+}
+
+.main-menu ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.main-menu ul li .whatsapp {
+    font: 700 1.6rem Archivo;
+} 
+
+/*Formulario*/
+
+#index #container-form {
+    background-color: rgb(234, 241, 243);
+    width: 80%;
+    max-width: 40rem;
+    border-radius: 0.8rem;
+    margin: -3.2rem auto 3.2rem;
+    padding-top: 1.4rem;
+    padding-bottom: 1.0rem;
+    
+}
+
+#index #container-form fieldset {
+    border: none;
+}
+
+#index #container-form fieldset legend {
+    font: 600 2.0rem Archivo;
+    color: black;
+    margin-bottom: 1.0rem;
+    margin-left: 9.0rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 50%;
+
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid rgb(130, 222, 238);
+}
+
+#index #container-form .input-block {
+    width: 30%;
+    margin-left: 13rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.0rem;
+}
+
+#index #container-form .input-block label {
+    font: 400 1.5rem Archivo;
+}
+
+#index #container-form button {
+    width: 25%;
+    height: 40%;
+    background: rgb(130, 222, 238);
+    border: 0;
+    border-radius: 0.8rem; /*arredondar*/
+    cursor: pointer;
+    font: 700 1.6rem Archivo;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+
+    margin-top: 1.0rem;
+    margin-left: 14rem;
+}
+/*-------------------*/
+
+
+/*---Rodapé--*/
+
+footer{
+    background: #ffab62;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    left: 0;
+}
+
+footer img {
+    margin-top: 0.6rem;
+    margin-left: 0.5rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+#Equipe {
+    color: #1c5ba3;
+    font: 700 1.2rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+

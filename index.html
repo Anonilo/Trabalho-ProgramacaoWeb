@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Acessórios para PC</title>
+    <link rel="stylesheet" href="/Trabalho/header.css">
+    <link rel="stylesheet" href="/Trabalho/ShoppingCart.css">
+
+    <link href="https://fonts.googleapis.
+    com/css2?family=Archivo:wght@400;700&
+    amp;family=Poppins:wght@400;600&amp;
+    display=swap" rel="stylesheet">
+
+</head>
+    
+<body id="index">
+
+    <header class="page1-header">
+        <div class="top-bar-container">
+            <p><img src="/Trabalho/logo.svg" alt="logo"></p>
+            <h1>Loja de Acessórios para PC</h1>
+            <p> Nome Completo <img src="/Trabalho/images.svg" alt="Foto"></p>
+        </div>
+        <a id="go-page2" href="/Trabalho/profile.html">Perfil</a>
+    </header>
+
+    <main>
+              <!--Menu-->
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#about">Equipe</a></li>
+                <li>Produtos
+                    <ul>
+                        <li>Mouse</li>
+                        <li>Teclado</li>
+                        <li>Headset</li>
+                    </ul>
+                </li>
+                <li>Contato
+                    <ul class="whatsapp">
+                        <img src="/Trabalho/whatsapp.svg" alt="Whatsapp"> 89548495
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+                <!--Cart-->
+        <div class="shopping-cart">
+            <!-- Title -->
+            <div class="title">
+              Carrinho
+            </div>
+           
+            <!-- Product #1 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="item-1.png" alt="" />
+              </div>
+           
+              <div class="description">
+                <span>Supimpa</span>
+                <span>Headset</span>
+                <span>Rosa</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="/Trabalho/add.svg" alt="plus" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="/Trabalho/minus.svg" alt="minus" />
+                </button>
+              </div>
+           
+              <div class="total-price">$30</div>
+            </div>
+           
+            <!-- Product #2 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="item-2.png" alt=""/>
+              </div>
+           
+              <div class="description">
+                <span>WOW</span>
+                <span>Mouse</span>
+                <span>Branco</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="/Trabalho/add.svg" alt="plus" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="/Trabalho/minus.svg" alt="minus" />
+                </button>
+              </div>
+           
+              <div class="total-price">$70</div>
+            </div>
+           
+            <!-- Product #3 -->
+            <div class="item">
+              <div class="buttons">
+                <span class="delete-btn"></span>
+                <span class="like-btn"></span>
+              </div>
+           
+              <div class="image">
+                <img src="item-3.png" alt="" />
+              </div>
+           
+              <div class="description">
+                <span>Top</span>
+                <span>Teclado</span>
+                <span>Preto</span>
+              </div>
+           
+              <div class="quantity">
+                <button class="plus-btn" type="button" name="button">
+                  <img src="/Trabalho/add.svg" alt="plus" />
+                </button>
+                <input type="text" name="name" value="1">
+                <button class="minus-btn" type="button" name="button">
+                  <img src="/Trabalho/minus.svg" alt="minus" />
+                </button>
+              </div>
+           
+              <div class="total-price">$49</div>
+            </div>
+          </div>
+
+          <div id="container-form">
+            <form action="" id="create-class">
+              <fieldset> <!--Agrupamento de Dados-->
+                <legend>Adicionar no Carrinho</legend>
+  
+                <div class="input-block">
+                  <label for="name-product">Nome do Produto</label>
+                  <input type="text" name="name" id="name" required>
+                </div>
+                <div class="input-block">
+                  <label for="quantity-product">Quantidade</label>
+                  <input type="number" id="quantity-product" name="quantity-product" min="1" required>
+                </div>
+              </fieldset>
+            </form>
+            <button type="submit" form="create-class">Adicionar</button>
+          </div>
+    </main>
+</body>
+
+<footer id="about">
+    <a name="about">
+        <div id="Equipe">
+            <p>
+            <img src="/Trabalho/images.svg" alt="Foto"> Rossana Ariadna Schumann Dullius
+        </p>
+        <p >
+            <img src="/Trabalho/images.svg" alt="Foto"> Christian Trisotto Alegri
+        </p>
+        <p>
+            <img src="/Trabalho/images.svg" alt="Foto"> Eduardo Rebelo Degan
+        </p>
+        </div>
+    </a>
+</footer>
+
+</html>

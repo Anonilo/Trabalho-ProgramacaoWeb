@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*---Perfil---*/
+
+.page2-header {
+    background-color: #d6b149;
+    height: 60px;
+}
+
+.page2-header #backtopage1 {
+    display: flex;
+    align-items: center;
+    margin-left: 1.0rem;
+}
+
+.page2-header #backtopage1 img {
+    margin-top: 0.8rem;
+}
+
+.page2-header #backtopage1 p{
+    margin-top: 0.8rem;
+    transform: translateX(800%);
+    font: 500 2.0rem Archivo;
+}
+
+#profile-container {
+    display: flex;
+    align-items: center;
+}
+
+#profile-container img{
+    float: right;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid rgb(71, 138, 158);
+    margin: 4.5rem 1.4rem;    
+}
