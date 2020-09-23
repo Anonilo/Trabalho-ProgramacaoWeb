@@ -166,12 +166,9 @@
     font: 400 1.5rem Archivo;
 }
 
-#index #container-form button {
+#index #container-form .btn-1 {
     width: 25%;
     height: 40%;
-    background: rgb(130, 222, 238);
-    border: 0;
-    border-radius: 0.8rem; /*arredondar*/
     cursor: pointer;
     font: 700 1.6rem Archivo;
 
@@ -183,6 +180,24 @@
     margin-top: 1.0rem;
     margin-left: 14rem;
 }
+
+.btn-1:hover::after {
+    width: 12%;
+}
+.btn-1::after {
+    content: '';
+    position: absolute;
+    border-radius: inherit;
+    width: 2%;
+    height: 5px;
+    background: #000;
+    transition: all .25 ease;
+    left: 48.85%;
+    bottom: -61%;
+    transform: translate(-50%);
+
+}
+
 /*-------------------*/
 
 
