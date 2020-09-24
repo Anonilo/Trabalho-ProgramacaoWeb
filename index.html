@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="/Trabalho/header.css">
     <link rel="stylesheet" href="/Trabalho/ShoppingCart.css">
 
+    <script type="text/javascript" src="/Trabalho/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="/Trabalho/funcoes.js"></script>
+
     <link href="https://fonts.googleapis.
     com/css2?family=Archivo:wght@400;700&
     amp;family=Poppins:wght@400;600&amp;
@@ -44,104 +47,19 @@
                 </li>
             </ul>
         </nav>
-
-                <!--Cart-->
-        <div class="shopping-cart">
-            <!-- Title -->
-            <div class="title">
-              Carrinho
-            </div>
-           
-            <!-- Product #1 -->
-            <div class="item">
-              <div class="buttons">
-                <span class="delete-btn"></span>
-                <span class="like-btn"></span>
-              </div>
-           
-              <div class="image">
-                <img src="item-1.png" alt="" />
-              </div>
-           
-              <div class="description">
-                <span>Supimpa</span>
-                <span>Headset</span>
-                <span>Rosa</span>
-              </div>
-           
-              <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                  <img src="/Trabalho/add.svg" alt="plus" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                  <img src="/Trabalho/minus.svg" alt="minus" />
-                </button>
-              </div>
-           
-              <div class="total-price">$30</div>
-            </div>
-           
-            <!-- Product #2 -->
-            <div class="item">
-              <div class="buttons">
-                <span class="delete-btn"></span>
-                <span class="like-btn"></span>
-              </div>
-           
-              <div class="image">
-                <img src="item-2.png" alt=""/>
-              </div>
-           
-              <div class="description">
-                <span>WOW</span>
-                <span>Mouse</span>
-                <span>Branco</span>
-              </div>
-           
-              <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                  <img src="/Trabalho/add.svg" alt="plus" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                  <img src="/Trabalho/minus.svg" alt="minus" />
-                </button>
-              </div>
-           
-              <div class="total-price">$70</div>
-            </div>
-           
-            <!-- Product #3 -->
-            <div class="item">
-              <div class="buttons">
-                <span class="delete-btn"></span>
-                <span class="like-btn"></span>
-              </div>
-           
-              <div class="image">
-                <img src="item-3.png" alt="" />
-              </div>
-           
-              <div class="description">
-                <span>Top</span>
-                <span>Teclado</span>
-                <span>Preto</span>
-              </div>
-           
-              <div class="quantity">
-                <button class="plus-btn" type="button" name="button">
-                  <img src="/Trabalho/add.svg" alt="plus" />
-                </button>
-                <input type="text" name="name" value="1">
-                <button class="minus-btn" type="button" name="button">
-                  <img src="/Trabalho/minus.svg" alt="minus" />
-                </button>
-              </div>
-           
-              <div class="total-price">$49</div>
-            </div>
-          </div>
+         
+        <button id="btnAdicionar">Novo</button>
+        <table id="tblCarrinho">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Quantidade</th>
+              <th>Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>    
 
           <div id="container-form">
             <form action="" id="create-class">
