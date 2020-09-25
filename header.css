@@ -9,6 +9,20 @@
     background-color: #d6b149;
 } 
 
+.top-bar-container .Reload {
+    width: 120px;
+    height: 120px;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.top-bar-container .Reload img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+}
+
 .page1-header .top-bar-container {
     width: 100%;
     margin: 0 auto;
@@ -166,7 +180,8 @@
     font: 400 1.5rem Archivo;
 }
 
-#index #container-form .btn-1 {
+#index #container-form .btn-1,
+#index #container-form .btn-2 {
     width: 25%;
     height: 40%;
     cursor: pointer;
@@ -181,22 +196,6 @@
     margin-left: 14rem;
 }
 
-.btn-1:hover::after {
-    width: 12%;
-}
-.btn-1::after {
-    content: '';
-    position: absolute;
-    border-radius: inherit;
-    width: 2%;
-    height: 5px;
-    background: #000;
-    transition: all .25 ease;
-    left: 48.85%;
-    bottom: -71.5%;
-    transform: translate(-50%);
-
-}
 
 /*-------------------*/
 
