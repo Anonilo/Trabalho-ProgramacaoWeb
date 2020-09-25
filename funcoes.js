@@ -8,21 +8,39 @@ $(function(){
 function Adicionar() {
     $("#tblCarrinho tbody").append(
         "<tr>"+
-        "<td><input type='text'/></td>"+
-        "<td><input type='text'/></td>"+
-        "<td><input type='text'/></td>"+
+        "<td>"+ $("#name_product").val() +"</td>"+
+        "<td>"+ $("#quantity_product").val()+"</td>"+
+        "<td>"+ $("#price_product").val() +"</td>"+
         "<td><button class='btnExcluir'>Excluir</button> <button class='btnSalvar'>Salvar</button></td>"+
         "</tr>");
+
+        //limpar formulário
+        formClear();
      
     $(".btnExcluir").bind("click", Excluir);    
     $(".btnSalvar").bind("click", Salvar);
 };
+
+function cartUpdate() {
+    if ($("#name_product").val() != null && $("#name_product").val() != '') {
+        // Adicona o produto no carrinho
+        Adicionar();
+
+    }
+}
+
+function formClear() {
+    $("#name_product").val("");
+    $("#quantity_product").val("");
+    $("#price_product").val("");
+}
 
 function Excluir(){
     var par = $(this).parent().parent(); //tr
     par.remove();
 };
 
+/*
 function Salvar(){
     var par = $(this).parent().parent(); //tr
     var tdProduto = par.children("td:nth-child(1)");
@@ -55,5 +73,4 @@ function Editar(){
     $(".btnSalvar").bind("click", Salvar);
     $(".btnEditar").bind("click", Editar);
    };
-   
-
+   */

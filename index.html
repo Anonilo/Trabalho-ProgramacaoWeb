@@ -47,9 +47,9 @@
                 </li>
             </ul>
         </nav>
-         
-        <button id="btnAdicionar">Novo</button>
+
         <table id="tblCarrinho">
+          <p>Carrinho</p>
           <thead>
             <tr>
               <th>Produto</th>
@@ -68,19 +68,19 @@
   
                 <div class="input-block">
                   <label for="name-product">Nome do Produto</label>
-                  <input type="text" name="name" id="name" required>
+                  <input type="text" name="name_product" id="name_product" required>
                 </div>
                 <div class="input-block">
                   <label for="quantity-product">Quantidade</label>
-                  <input type="number" id="quantity-product" name="quantity-product" required>
+                  <input type="number" id="quantity_product" name="quantity_product" required>
                 </div>
                 <div class="input-block">
                   <label for="price-product">Preço</label>
-                  <input type="number" id="price-product" name="price-product" required>
+                  <input type="number" id="price_product" name="price_product" required>
                 </div>
               </fieldset>
             </form>
-            <button class="btn-1" type="submit" form="create-class">Adicionar</button>
+            <button type="button" onclick="cartUpdate();" class="btn-1" >Adicionar</button>
           </div>
     </main>
 </body>
