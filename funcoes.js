@@ -21,11 +21,20 @@ function Adicionar() {
 };
 
 function cartUpdate() {
+    var txt = "";
     if ($("#name_product").val() != null && $("#name_product").val() != ''
-    && $("#quantity_product").val() != null && $("#quantity_product").val() != ''
-    && $("#price_product").val() != null && $("#price_product").val() != '') {
-        // Adicona o produto no carrinho
+    && $("#quantity_product").val() != null && $("#quantity_product").val() >= 1 
+    && $("#price_product").val() != null && $("#price_product").val() >= 10) {
+        //Adiciona no carrinho
         Adicionar();
+    } else {
+        if($("#name_product").val() == '') {
+            alert("Nome não poder em branco");
+        } else if($("#quantity_product").val() <= 0 ) {
+            alert("Insira na quantidade um número maior que 1 ou igual a 1");
+        } else {
+            alert("Preço não pode ser menor que 10 ou vazio");
+        }
     }
 }
 
