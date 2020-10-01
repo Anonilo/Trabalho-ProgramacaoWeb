@@ -53,7 +53,7 @@ function Excluir(){
 function Recarregar(){
     document.location.reload(true);
 }
-/*
+
 function Salvar(){
     var par = $(this).parent().parent(); //tr
     var tdProduto = par.children("td:nth-child(1)");
@@ -68,7 +68,7 @@ function Salvar(){
 
     $(".btnExcluir").bind("click", Excluir);
     $(".btnEditar").bind("click", Editar);
-};
+}; 
 
 function Editar(){
     var par = $(this).parent().parent(); //tr
@@ -79,11 +79,10 @@ function Editar(){
     
     tdProduto.html("<input type='text' id='txtNome' value='"+tdProduto.html()+"'/>");
     tdQuantidade.html("<input type='text' id='txtTelefone' value='"+tdQuantidade.html()+"'/>");
-    tdPreco.html("<input type='text' id='txtEmail' value='"+tdBotoes.html()+"'/>");
+    tdPreco.html("<input type='text' id='txtEmail' value='"+tdPreco.html()+"'/>");
     tdBotoes.html("<button class='btnSalvar'>Salvar</button>");
     
     $(".btnExcluir").bind("click", Excluir);
     $(".btnSalvar").bind("click", Salvar);
     $(".btnEditar").bind("click", Editar);
    };
-   */
