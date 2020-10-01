@@ -6,7 +6,7 @@
 .page1-header {
     display: flex;
     flex-direction: column;
-    background-color: #d6b149;
+    background-color: #facc4e;
 } 
 
 .top-bar-container .Reload {
@@ -194,6 +194,7 @@
 
     margin-top: 1.0rem;
     margin-left: 14rem;
+    border-radius: 15%;
 }
 
 
